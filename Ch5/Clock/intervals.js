@@ -8,7 +8,7 @@ function sayHello() {
 
   clock.innerHTML = `${Hours}:${minutes}:${seconds}`;
   // function sayHello() {
-  //
+  //  sayHello를 한줄로 가능
   //   clock.innerText = new Date().toLocaleTimeString();
   // }
 }
