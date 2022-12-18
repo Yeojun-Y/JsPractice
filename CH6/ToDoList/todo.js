@@ -21,8 +21,9 @@ function showToDO(newToDo) {
 }
 function delToDo(event) {
   const delLi = event.target.parentElement;
-  console.log(delLi.id);
   delLi.remove();
+  toDoListArray = toDoListArray.filter((toDo) => toDo.id !== delLi.id);
+  saveToDo();
   //   localStorage.removeItem();
 }
 
