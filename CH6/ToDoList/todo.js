@@ -9,14 +9,14 @@ function saveToDo() {
 }
 function showToDO(newToDo) {
   const li = document.createElement("li");
+  const btn = document.createElement("button");
   const span = document.createElement("span");
+  btn.innerHTML = "X";
+  btn.addEventListener("click", delToDo);
+  li.appendChild(btn);
   li.id = newToDo.id;
   span.innerText = newToDo.text;
   li.appendChild(span);
-  const btn = document.createElement("button");
-  btn.innerHTML = "??X??";
-  btn.addEventListener("click", delToDo);
-  li.appendChild(btn);
   toDoList.appendChild(li);
 }
 function delToDo(event) {

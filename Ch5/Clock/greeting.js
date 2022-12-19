@@ -13,7 +13,7 @@ function onSignInsubmit(event) {
   paintGreeting(username1);
 }
 function paintGreeting(event) {
-  greeting.innerText = `Hello! ${event}`;
+  greeting.innerText = `Hello! ${event}, Good to See You`;
   greeting.classList.remove(HIDDEN_CLASS);
 }
 const savedUsername = localStorage.getItem(USERNAME_KEY);
